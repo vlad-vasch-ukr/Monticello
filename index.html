@@ -4,32 +4,294 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ba-starter</title>
+    <title>Monticello</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/23cfa94cde.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/app.css">
 </head>
 <body>
     <header class="ba-header">
-        <div class="container">
-            <a href="" class="ba-logo"></a>
+        <div class="container ba-header__wrapper">
+            <a href="#" class="ba-logo"><img src="img/Logo.png" class="ba-logo__img" alt="logo"></a>
             <nav>
                 <ul class="ba-menu">
-                    <li class="ba-menu__item"><a href="" class="ba-manu__link"></a></li>
-                    <li class="ba-menu__item"><a href="" class="ba-manu__link"></a></li>
-                    <li class="ba-menu__item"><a href="" class="ba-manu__link"></a></li>
-                    <li class="ba-menu__item"><a href="" class="ba-manu__link"></a></li>
+                    <li class="ba-menu__item"><a href="#" data-filter="#projects" class="ba-menu__link">About Us</a></li>
+                    <li class="ba-menu__item"><a href="#" data-filter="#gallery" class="ba-menu__link">projects</a></li>
+                    <li class="ba-menu__item"><a href="#" data-filter="#news" class="ba-menu__link">news</a></li>
+                    <li class="ba-menu__item"><a href="#" data-filter="#contact" class="ba-menu__link">contact</a></li>
                 </ul>
             </nav>
+            <div class="ba-header__links">
+                <a href="#" class="ba-header__link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="ba-header__link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="ba-header__link"><i class="fab fa-instagram"></i></a>
+            </div>
         </div>
     </header>
     <main>
-        <section class="ba-section">
-            <div class="container"></div>
+        <section class="ba-section ba-hero">
+            <div class="ba-hero-slider">
+                <div class="ba-hero__slide">
+                    <div class="container">
+                        <h2 class="ba-hero__slide-title">Simple & mordern</h2>
+                        <p class="ba-hero__slide-text">We make the world's beautiful every day</p>
+                    </div>
+                </div>
+                <div class="ba-hero__slide">
+                    <div class="container">
+                        <h2 class="ba-hero__slide-title">Simple & mordern 2</h2>
+                        <p class="ba-hero__slide-text">We make the world's beautiful every day</p>
+                    </div>
+                </div>
+                <div class="ba-hero__slide">
+                    <div class="container">
+                        <h2 class="ba-hero__slide-title">Simple & mordern 3</h2>
+                        <p class="ba-hero__slide-text">We make the world's beautiful every day</p>
+                    </div>
+                </div>
+                <div class="ba-hero__slide">
+                    <div class="container">
+                        <h2 class="ba-hero__slide-title">Simple & mordern 4</h2>
+                        <p class="ba-hero__slide-text">We make the world's beautiful every day</p>
+                    </div>
+                </div>
+                <div class="ba-hero__slide">
+                    <div class="container">
+                        <h2 class="ba-hero__slide-title">Simple & mordern 5</h2>
+                        <p class="ba-hero__slide-text">We make the world's beautiful every day</p>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="ba-hero__btn"></button>
+        </section>
+        <section class="ba-projects" id="projects">
+            <div class="container">
+                <h2 class="ba-projects__title">what we do</h2>
+                <div class="ba-project">
+                    <div class="ba-project__picture">
+                        <img src="img/project_img-1.jpg" alt="trade center" class="ba-project__img">
+                    </div>
+                    <div class="ba-project__wrapper">
+                        <span class="ba-project__title-small">One World</span>
+                        <h3 class="ba-project__title">Trade Center</h3>
+                        <div class="ba-project__text-wrapper">
+                            <p class="ba-project__text">Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.</p>
+                        </div>
+                        <a href="#" class="ba-project__btn animated">more details</a>
+                        <span class="ba-project__address">New York City, United States - 1776 feet</span>
+                    </div>
+                </div>
+                <div class="ba-project ba-project--reverse">
+                    <div class="ba-project__picture ba-project__picture--reverse">
+                        <img src="img/project_img-2.jpg" alt="commerce centre" class="ba-project__img">
+                    </div>
+                    <div class="ba-project__wrapper ba-project__wrapper--reverse">
+                        <span class="ba-project__title-small">International</span>
+                        <h3 class="ba-project__title">Commerce Centre</h3>
+                        <div class="ba-project__text-wrapper">
+                            <p class="ba-project__text">Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.</p>
+                        </div>
+                        <a href="#" class="ba-project__btn animated">more details</a>
+                        <span class="ba-project__address">Hong Kong - 1588 Feet</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ba-section-news" id="news">
+            <div class="container">
+                <h2 class="ba-section-news__title">latest news</h2>
+                <div class="ba-row ba-row--margin ba-news-slider">
+                    <div class="ba-col-4 ba-col-4--padding">
+                        <div class="ba-news__slide">
+                            <img src="img/news-photo_1.jpg" alt="photo-1" class="ba-news__img">
+                            <img src="img/plus.png" alt="plus" class="ba-news__plus">
+                            <div class="ba-news__wrapper">
+                                <h3 class="ba-news__title">See The Unmatched Beauty Of The Great.</h3>
+                                <p class="ba-news__text">Free directories: directories are perfect for customers that are... searching for</p>
+                                <div class="ba-news-author">
+                                    <a href="#" class="ba-news-author__link">
+                                        <img src="img/author_photo-1.jpg" alt="isaac dunn" class="ba-news-author__img">
+                                    </a>
+                                    <div class="ba-news-author__wrapper">
+                                        <span class="ba-news-author__name">Isaac Dunn</span>
+                                        <span class="ba-news-author__date">09 Feb 2017</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ba-col-4 ba-col-4--padding">
+                        <div class="ba-news__slide">
+                            <img src="img/news-photo_2.jpg" alt="photo-1" class="ba-news__img">
+                            <div class="ba-news__wrapper">
+                                <h3 class="ba-news__title">Effective Advertising Pointers.</h3>
+                                <p class="ba-news__text">Having a home based business is a wonderful asset to your life...</p>
+                                <div class="ba-news-author">
+                                    <a href="#" class="ba-news-author__link">
+                                        <img src="img/author_photo-2.jpg" alt="isaac dunn" class="ba-news-author__img">
+                                    </a>
+                                    <div class="ba-news-author__wrapper">
+                                        <span class="ba-news-author__name">Dominic Freeman</span>
+                                        <span class="ba-news-author__date">24 Apr 2017</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ba-col-4 ba-col-4--padding">
+                        <div class="ba-news__slide">
+                            <img src="img/news-photo_3.jpg" alt="photo-1" class="ba-news__img ba-news__img--position">
+                            <div class="ba-news__wrapper">
+                                <h3 class="ba-news__title">Hypnotize Yourself Into The Ghost.</h3>
+                                <p class="ba-news__text">There are many things that are important to catalog design....</p>
+                                <div class="ba-news-author">
+                                    <a href="#" class="ba-news-author__link">
+                                        <img src="img/author_photo-3.jpg" alt="isaac dunn" class="ba-news-author__img">
+                                    </a>
+                                    <div class="ba-news-author__wrapper">
+                                        <span class="ba-news-author__name">Alice Ward</span>
+                                        <span class="ba-news-author__date">30 Dec 2017</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ba-col-4 ba-col-4--padding">
+                        <div class="ba-news__slide">
+                            <img src="img/news-photo_1.jpg" alt="photo-1" class="ba-news__img">
+                            <img src="img/plus.png" alt="plus" class="ba-news__plus">
+                            <div class="ba-news__wrapper">
+                                <h3 class="ba-news__title">See The Unmatched Beauty Of The Great.</h3>
+                                <p class="ba-news__text">Free directories: directories are perfect for customers that are... searching for</p>
+                                <div class="ba-news-author">
+                                    <a href="#" class="ba-news-author__link">
+                                        <img src="img/author_photo-1.jpg" alt="isaac dunn" class="ba-news-author__img">
+                                    </a>
+                                    <div class="ba-news-author__wrapper">
+                                        <span class="ba-news-author__name">Isaac Dunn</span>
+                                        <span class="ba-news-author__date">09 Feb 2017</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ba-col-4 ba-col-4--padding">
+                        <div class="ba-news__slide">
+                            <img src="img/news-photo_2.jpg" alt="photo-1" class="ba-news__img">
+                            <div class="ba-news__wrapper">
+                                <h3 class="ba-news__title">Effective Advertising Pointers.</h3>
+                                <p class="ba-news__text">Having a home based business is a wonderful asset to your life...</p>
+                                <div class="ba-news-author">
+                                    <a href="#" class="ba-news-author__link">
+                                        <img src="img/author_photo-2.jpg" alt="isaac dunn" class="ba-news-author__img">
+                                    </a>
+                                    <div class="ba-news-author__wrapper">
+                                        <span class="ba-news-author__name">Dominic Freeman</span>
+                                        <span class="ba-news-author__date">24 Apr 2017</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ba-gallery" id="gallery">
+            <h2 class="ba-gallery__title">gallery</h2>
+            <div class="container">
+                <div class="ba-row">
+                   <div class="ba-col-6">
+                    <div class="ba-gallery__picture">
+                        <a href="#" class="ba-gallery__link">
+                            <img src="img/gallery_img-1.jpg" alt="image-1" class="ba-gallery__img">
+                            <img src="img/360.png" alt="360" class="ba-gallery__360">
+                        </a>
+                    </div>
+                   </div>
+                   <div class="ba-col-6">
+                       <div class="ba-row">
+                        <div class="ba-col-6">
+                            <a href="#" class="ba-gallery__link">
+                                <img src="img/gallery_img-2.jpg" alt="image-2" class="ba-gallery__img">
+                            </a>
+                           </div>
+                           <div class="ba-col-6">
+                            <a href="#" class="ba-gallery__link">
+                                <img src="img/gallery_img-3.jpg" alt="image-3" class="ba-gallery__img">
+                            </a>
+                           </div>
+                       </div>
+                       <div class="ba-row">
+                        <div class="ba-col-6">
+                            <a href="#" class="ba-gallery__link">
+                                <img src="img/gallery_img-4.jpg" alt="image-4" class="ba-gallery__img">
+                            </a>
+                           </div>
+                           <div class="ba-col-6">
+                            <a href="#" class="ba-gallery__link">
+                                <img src="img/gallery_img-5.jpg" alt="image-5" class="ba-gallery__img">
+                            </a>
+                           </div>
+                       </div>
+                   </div>
+                </div>
+                <a href="#" class="ba-gallery__btn animated">see more</a>
+            </div>
+        </section>
+        <section class="ba-section-map">
+            <div id="map"></div>
         </section>
     </main>
     <footer class="ba-footer">
-        <div class="container"></div>
+        <div class="container ba-footer__wrapper">
+            <form action="" class="ba-footer-form" id="contact">
+                <h2 class="ba-footer-form__title">get in touch</h2>
+                <div class="ba-footer-form__wrapper">
+                    <div class="ba-form__info">
+                        <span class="ba-form__address">91 Nolan Extensions Suite 670</span>
+                        <span class="ba-form__telefone">+001 356-868-2454</span>
+                        <span class="ba-form__mail">gahuy93@gmail.com</span>
+                        <span class="ba-form__time">From 07:05AM to 19:30PM</span>
+                    </div>
+                    <div class="ba-form__data">
+                        <div class="ba-form-control">
+                            <input type="text" id="userName" required placeholder="Mollie Medina" class="ba-form__input">
+                        </div>
+                        <div class="ba-form-control">
+                            <input type="email" id="userEmail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required placeholder="Email" class="ba-form__input">
+                        </div>
+                        <div class="ba-form-control">
+                            <button class="ba-form__submit animated">submit</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="ba-footer__info">
+                <a href="#" class="ba-logo"><img src="img/Logo.png" class="ba-logo__img" alt="logo"></a>
+             <div class="ba-footer__links">
+                <a href="#" class="ba-footer__link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="ba-footer__link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="ba-footer__link"><i class="fab fa-instagram"></i></a>
+             </div>
+            </div>
+            <div class="ba-footer__rights">
+                <span class="ba-footer__copyrights">Copyrights &copy; 2017 Monticello</span>
+                <span class="ba-footer__creator">Made with <i class="fas fa-heart"></i> by Ga Huy</span>
+            </div>
+        </div>
     </footer>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="js/app.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOFADmh5XKTWnRWE4PgDr1PgqxPNZy92M&callback=initMap"></script>
 </body>
 </html>

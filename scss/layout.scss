@@ -1,6 +1,6 @@
 //variables
 $containerWidth: 1170px;
-$gap: 15px;
+$gap: 5px;
 $columnsCount: 12;
 $colWidth: 100%/$columnsCount;
 
@@ -20,14 +20,23 @@ $colWidth: 100%/$columnsCount;
     flex-wrap: wrap;
     margin-left: -$gap;
     margin-right: -$gap;
+    
+}
+.ba-row--margin {
+    margin-left: -15px;
+    margin-right: -15px;
 }
 .ba-row + .ba-row {
-    margin-top: 1rem;
+    margin-top: 10px;
 }
 [class^='ba-col'] {
     padding-left: $gap;
     padding-right: $gap;
     width: 100%;
+}
+.ba-col-4--padding {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 @for $i from 1 through $columnsCount {
     .ba-col-#{$i} {
